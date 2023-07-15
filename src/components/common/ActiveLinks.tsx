@@ -24,12 +24,12 @@ const ActiveLink: React.FC<TProps> = ({ text, href }) => {
         href={href}
         onClick={(e) => handleClick(e)}
         style={style}
-        className={pathname === href ? 'text-primary py-1' : ''}
+        className={pathname === href ? 'text-primary py-1 ' : ''}
       >
         {text}
       </a>
       {pathname === href && (
-        <div className="border-2 border-black w-4 rounded-lg"></div>
+        <div className="border-2 border-primary w-4 rounded-lg"></div>
       )}
     </div>
   )
